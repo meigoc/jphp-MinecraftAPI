@@ -1,0 +1,45 @@
+name: MinecraftAPI
+version: 1.0
+description: Пакет для взаимодействия с MinecraftAPI
+
+plugins:
+  - Hub
+  - Doc
+
+sources:
+  - src
+
+doc:
+  stub-dirs: ['./src/']
+  langs: {en: English, ru: Русский}
+
+devDeps:
+  dn-bundle-plugin: '*'
+
+config:
+  ignore:
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /.gitignore
+  - /gradle/**
+  - /**.phpintel
+  - /bundle/**
+  - /src-bundle/**
+  - /build/**
+  - /vendor/**
+  - /jars/**
+  - /src-jvm/**
+  - /.gitignore
+  - /**.gradle
+  - /gradlew
+  - /gradlew.**
+
+develnext-bundle:
+  version: 1.0
+  name: MinecraftAPI
+  description: Плагин для взаимодействия с MinecraftAPI
+  author: Meigo™ Corporation
+  icon: "develnext/bundle/MinecraftAPI/icon.png"
+  group: "network"
+  class: "develnext\\bundle\\MinecraftAPI\\MinecraftAPIBundle"
